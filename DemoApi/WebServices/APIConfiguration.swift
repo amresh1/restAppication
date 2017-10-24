@@ -15,7 +15,7 @@ protocol ApiConfiguration {
     var method : HTTPMethod {get}
     var accessToken : String {get}
     var path : String {get}
-    var parameter : [String: Any] {get}
+    var parameters : [String: Any] {get}
 }
 
 extension ApiConfiguration{
@@ -29,6 +29,7 @@ enum ApiPrefernces : ApiConfiguration {
     
     var path: String{
         switch self {
+        // sample 
         case .home:
             return "/home.json"
         default:
@@ -49,7 +50,7 @@ enum ApiPrefernces : ApiConfiguration {
         return "Bearer"
     }
     
-    var parameter: [String : Any]{
+    var parameters: [String : Any]{
         switch self {
         case .home:
             return [:]
