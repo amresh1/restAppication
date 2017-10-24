@@ -1,9 +1,4 @@
-//
-//  File.swift
-//
-//  Created by sahijoshi on 4/20/17.
-//  Copyright © 2017 javra. All rights reserved.
-//
+
 
 import Foundation
 import Alamofire
