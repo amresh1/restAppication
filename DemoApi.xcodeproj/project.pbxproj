@@ -18,6 +18,8 @@
 		EBC6ED041F8FBDDA002EA3CC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ED031F8FBDDA002EA3CC /* Router.swift */; };
 		EBC6ED061F8FBDED002EA3CC /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ED051F8FBDED002EA3CC /* RestManager.swift */; };
 		EBC6ED091F8FBE23002EA3CC /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ED081F8FBE23002EA3CC /* APIHandler.swift */; };
+		EBE7ED851FA630C400CA3CDD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7ED841FA630C400CA3CDD /* Config.swift */; };
+		EBE7ED871FA630EC00CA3CDD /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7ED861FA630EC00CA3CDD /* Dictionary+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EBC6ED031F8FBDDA002EA3CC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EBC6ED051F8FBDED002EA3CC /* RestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
 		EBC6ED081F8FBE23002EA3CC /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		EBE7ED841FA630C400CA3CDD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		EBE7ED861FA630EC00CA3CDD /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 			children = (
 				EBC6ED001F8FBB9F002EA3CC /* WebServices */,
 				EBC6ED071F8FBDF8002EA3CC /* API */,
+				EBE7ED831FA630A100CA3CDD /* Exensions */,
+				EBE7ED881FA6338F00CA3CDD /* Models */,
 				EBC6ECEB1F8FBB7B002EA3CC /* AppDelegate.swift */,
 				EBC6ECED1F8FBB7B002EA3CC /* ViewController.swift */,
 				EBC6ECEF1F8FBB7B002EA3CC /* Main.storyboard */,
@@ -117,6 +123,22 @@
 				EBC6ED081F8FBE23002EA3CC /* APIHandler.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		EBE7ED831FA630A100CA3CDD /* Exensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7ED841FA630C400CA3CDD /* Config.swift */,
+				EBE7ED861FA630EC00CA3CDD /* Dictionary+Extension.swift */,
+			);
+			path = Exensions;
+			sourceTree = "<group>";
+		};
+		EBE7ED881FA6338F00CA3CDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +283,8 @@
 				EBC6ECF41F8FBB7B002EA3CC /* DemoApi.xcdatamodeld in Sources */,
 				EBC6ED041F8FBDDA002EA3CC /* Router.swift in Sources */,
 				EBC6ED061F8FBDED002EA3CC /* RestManager.swift in Sources */,
+				EBE7ED871FA630EC00CA3CDD /* Dictionary+Extension.swift in Sources */,
+				EBE7ED851FA630C400CA3CDD /* Config.swift in Sources */,
 				EBC6ECEC1F8FBB7B002EA3CC /* AppDelegate.swift in Sources */,
 				EBC6ED021F8FBBCA002EA3CC /* APIConfiguration.swift in Sources */,
 			);

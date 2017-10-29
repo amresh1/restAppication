@@ -21,6 +21,7 @@ protocol ApiConfiguration {
 extension ApiConfiguration{
     var baseUrl : String{
         return "http://iography.in/eSchool"
+       
     }
 }
 
@@ -29,7 +30,6 @@ enum ApiPrefernces : ApiConfiguration {
     
     var path: String{
         switch self {
-        // sample 
         case .home:
             return "/home.json"
         default:
@@ -47,7 +47,7 @@ enum ApiPrefernces : ApiConfiguration {
     }
     
     var accessToken: String{
-        return "Bearer"
+        return "Bearer" + Config.Preferences.token
     }
     
     var parameters: [String : Any]{

@@ -4,6 +4,7 @@ import Foundation
 import Alamofire
 
 class Router: URLRequestConvertible, ApiConfiguration{
+   
      var preference: ApiPrefernces
     
     var path: String {
@@ -18,7 +19,7 @@ class Router: URLRequestConvertible, ApiConfiguration{
         return preference.accessToken
     }
     
-    var parameters: [String : Any]{
+     var parameters: [String : Any] {
         return preference.parameters
     }
     
@@ -40,4 +41,3 @@ class Router: URLRequestConvertible, ApiConfiguration{
         return try JSONEncoding.default.encode(request, with: parameters)
     }
 }
-
