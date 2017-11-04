@@ -20,6 +20,8 @@
 		EBC6ED091F8FBE23002EA3CC /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ED081F8FBE23002EA3CC /* APIHandler.swift */; };
 		EBE7ED851FA630C400CA3CDD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7ED841FA630C400CA3CDD /* Config.swift */; };
 		EBE7ED871FA630EC00CA3CDD /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7ED861FA630EC00CA3CDD /* Dictionary+Extension.swift */; };
+		EBE7ED8C1FA6383400CA3CDD /* QrReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE7ED8B1FA6383400CA3CDD /* QrReader.swift */; };
+		EBE7ED8E1FA63D3E00CA3CDD /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = EBE7ED8D1FA63D3E00CA3CDD /* square.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		EBC6ED081F8FBE23002EA3CC /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		EBE7ED841FA630C400CA3CDD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		EBE7ED861FA630EC00CA3CDD /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		EBE7ED8B1FA6383400CA3CDD /* QrReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrReader.swift; sourceTree = "<group>"; };
+		EBE7ED8D1FA63D3E00CA3CDD /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = square.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,12 @@
 				EBC6ED071F8FBDF8002EA3CC /* API */,
 				EBE7ED831FA630A100CA3CDD /* Exensions */,
 				EBE7ED881FA6338F00CA3CDD /* Models */,
+				EBE7ED891FA637C200CA3CDD /* VIew */,
+				EBE7ED8A1FA637E600CA3CDD /* Controller */,
 				EBC6ECEB1F8FBB7B002EA3CC /* AppDelegate.swift */,
 				EBC6ECED1F8FBB7B002EA3CC /* ViewController.swift */,
-				EBC6ECEF1F8FBB7B002EA3CC /* Main.storyboard */,
 				EBC6ECF51F8FBB7B002EA3CC /* Assets.xcassets */,
+				EBE7ED8D1FA63D3E00CA3CDD /* square.png */,
 				EBC6ECF71F8FBB7B002EA3CC /* LaunchScreen.storyboard */,
 				EBC6ECFA1F8FBB7B002EA3CC /* Info.plist */,
 				EBC6ECF21F8FBB7B002EA3CC /* DemoApi.xcdatamodeld */,
@@ -139,6 +145,22 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EBE7ED891FA637C200CA3CDD /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				EBC6ECEF1F8FBB7B002EA3CC /* Main.storyboard */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		EBE7ED8A1FA637E600CA3CDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBE7ED8B1FA6383400CA3CDD /* QrReader.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +227,7 @@
 			files = (
 				EBC6ECF91F8FBB7B002EA3CC /* LaunchScreen.storyboard in Resources */,
 				EBC6ECF61F8FBB7B002EA3CC /* Assets.xcassets in Resources */,
+				EBE7ED8E1FA63D3E00CA3CDD /* square.png in Resources */,
 				EBC6ECF11F8FBB7B002EA3CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE7ED8C1FA6383400CA3CDD /* QrReader.swift in Sources */,
 				EBC6ED091F8FBE23002EA3CC /* APIHandler.swift in Sources */,
 				EBC6ECEE1F8FBB7B002EA3CC /* ViewController.swift in Sources */,
 				EBC6ECF41F8FBB7B002EA3CC /* DemoApi.xcdatamodeld in Sources */,
