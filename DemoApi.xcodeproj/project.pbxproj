@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A9E3E42608F3D370E9BE535F /* Pods_DemoApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572B2AE4DE4C3DAF8281BEA6 /* Pods_DemoApi.framework */; };
+		EB3D65C41FAE096100F82CE1 /* TableNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D65C31FAE096100F82CE1 /* TableNumber.swift */; };
+		EB3D65C61FAE0A4600F82CE1 /* TableNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D65C51FAE0A4600F82CE1 /* TableNumberViewController.swift */; };
+		EB3D65C81FAE0C8100F82CE1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EB3D65C71FAE0C8000F82CE1 /* logo.png */; };
+		EB3D65CB1FAE0F1700F82CE1 /* TableNumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3D65CA1FAE0F1700F82CE1 /* TableNumberCollectionViewCell.swift */; };
 		EBC6ECEC1F8FBB7B002EA3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ECEB1F8FBB7B002EA3CC /* AppDelegate.swift */; };
 		EBC6ECEE1F8FBB7B002EA3CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC6ECED1F8FBB7B002EA3CC /* ViewController.swift */; };
 		EBC6ECF11F8FBB7B002EA3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC6ECEF1F8FBB7B002EA3CC /* Main.storyboard */; };
@@ -28,6 +32,10 @@
 		47378AAA95FA64AA6EA74DDF /* Pods-DemoApi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApi.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApi/Pods-DemoApi.release.xcconfig"; sourceTree = "<group>"; };
 		572B2AE4DE4C3DAF8281BEA6 /* Pods_DemoApi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoApi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7F3022F8BE52367C3340A /* Pods-DemoApi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoApi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoApi/Pods-DemoApi.debug.xcconfig"; sourceTree = "<group>"; };
+		EB3D65C31FAE096100F82CE1 /* TableNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNumber.swift; sourceTree = "<group>"; };
+		EB3D65C51FAE0A4600F82CE1 /* TableNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNumberViewController.swift; sourceTree = "<group>"; };
+		EB3D65C71FAE0C8000F82CE1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EB3D65CA1FAE0F1700F82CE1 /* TableNumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNumberCollectionViewCell.swift; sourceTree = "<group>"; };
 		EBC6ECE81F8FBB7B002EA3CC /* DemoApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC6ECEB1F8FBB7B002EA3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBC6ECED1F8FBB7B002EA3CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +83,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EB3D65C91FAE0EED00F82CE1 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				EB3D65CA1FAE0F1700F82CE1 /* TableNumberCollectionViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		EBC6ECDF1F8FBB7B002EA3CC = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +121,7 @@
 				EBC6ECEB1F8FBB7B002EA3CC /* AppDelegate.swift */,
 				EBC6ECED1F8FBB7B002EA3CC /* ViewController.swift */,
 				EBC6ECF51F8FBB7B002EA3CC /* Assets.xcassets */,
+				EB3D65C71FAE0C8000F82CE1 /* logo.png */,
 				EBE7ED8D1FA63D3E00CA3CDD /* square.png */,
 				EBC6ECF71F8FBB7B002EA3CC /* LaunchScreen.storyboard */,
 				EBC6ECFA1F8FBB7B002EA3CC /* Info.plist */,
@@ -143,6 +160,7 @@
 		EBE7ED881FA6338F00CA3CDD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EB3D65C31FAE096100F82CE1 /* TableNumber.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				EBE7ED8B1FA6383400CA3CDD /* QrReader.swift */,
+				EB3D65C51FAE0A4600F82CE1 /* TableNumberViewController.swift */,
+				EB3D65C91FAE0EED00F82CE1 /* cells */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB3D65C81FAE0C8100F82CE1 /* logo.png in Resources */,
 				EBC6ECF91F8FBB7B002EA3CC /* LaunchScreen.storyboard in Resources */,
 				EBC6ECF61F8FBB7B002EA3CC /* Assets.xcassets in Resources */,
 				EBE7ED8E1FA63D3E00CA3CDD /* square.png in Resources */,
@@ -307,10 +328,13 @@
 				EBC6ECF41F8FBB7B002EA3CC /* DemoApi.xcdatamodeld in Sources */,
 				EBC6ED041F8FBDDA002EA3CC /* Router.swift in Sources */,
 				EBC6ED061F8FBDED002EA3CC /* RestManager.swift in Sources */,
+				EB3D65C61FAE0A4600F82CE1 /* TableNumberViewController.swift in Sources */,
+				EB3D65CB1FAE0F1700F82CE1 /* TableNumberCollectionViewCell.swift in Sources */,
 				EBE7ED871FA630EC00CA3CDD /* Dictionary+Extension.swift in Sources */,
 				EBE7ED851FA630C400CA3CDD /* Config.swift in Sources */,
 				EBC6ECEC1F8FBB7B002EA3CC /* AppDelegate.swift in Sources */,
 				EBC6ED021F8FBBCA002EA3CC /* APIConfiguration.swift in Sources */,
+				EB3D65C41FAE096100F82CE1 /* TableNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
